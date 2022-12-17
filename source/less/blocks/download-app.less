@@ -1,0 +1,128 @@
+.download-app {
+    font-style: normal;
+    color: white;
+    background-image: url(../img/phone.png);
+    background-position: bottom 75% left 50%;
+    background-repeat: no-repeat;
+}
+
+.download-app__title {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 120%;
+    padding-bottom: 313px;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+
+.download-app__button {
+    color: #fff;
+    display: block;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    width: 280px;
+    height: 55px;
+    border: 3px solid #fff;
+    border-radius: 29px;
+    background-color: #1D2631;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    align-items: center;
+    text-align: center;
+}
+
+.operating-systems-list__wrapper {
+    padding-top: 28px;
+    background-color: #1D2631;
+    & p {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 24px;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+.operating-systems__list {
+    display: flex;
+    margin: 0;
+    justify-content: center;
+}
+
+.operating-systems__item:not(:nth-child(3)) {
+    margin-right: 35px;
+}
+
+.operating-systems__item:first-child {
+    margin-top: 32px;
+}
+
+.operating-systems__item:nth-child(2) {
+    margin-top: 38px;
+}
+
+.operating-systems__item:nth-child(3) {
+    margin-top: 44px;
+}
+
+.download-app__desc {
+    margin-top: 28px;
+    padding-bottom: 38px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    align-items: center;
+    text-align: center;
+}
+
+
+@media (min-width: @tablet-width) {
+    .download-app {
+        background-image: url(../img/iphone-tablet.png);
+        margin-top: 74px;
+        min-height: 545px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 660px;
+    }
+
+    .download-app__title {
+        font-weight: 300;
+        font-size: 40px;
+        line-height: 120%;
+        width: 200px;
+        padding: 0;
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .download-app__wrapper {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        width: 300px;
+    }
+    
+
+    .operating-systems-list__wrapper {
+        background: none;
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        justify-content: center;
+    }
+
+    .download-app__button {
+        background: transparent;
+    }
+}
+
