@@ -28,8 +28,10 @@
     position: relative;
     vertical-align: middle;
     width: 24px;
-    height: 24px;
+    height: 0;
     cursor: pointer;
+    top: 48px;
+    left: -3px;
 }
 
 .slider__toggle::before {
@@ -39,16 +41,18 @@
     height: 6px;
     background-color: #bec2c7;
     border-radius: 50%;
-    
+
 }
 
 #review-toggle-1:checked ~ .reviews__toggles label[for="review-toggle-1"]::before,
 #review-toggle-2:checked ~ .reviews__toggles label[for="review-toggle-2"]::before,
 #review-toggle-3:checked ~ .reviews__toggles label[for="review-toggle-3"]::before {
     background-color: #fff;
-    top: -3px;
-    left: 10px;
+    top: -2px;
+    left: 9px;
     border: 3px solid #1d2631;
+    width: 11px;
+    height: 11px;
 }
 
 #review-toggle-1:checked ~ .reviews__slider .reviews__slider-items {
@@ -79,7 +83,7 @@
     float: left;
     width: 280px;
     min-height: 300px;
-    padding-top: 48px;
+    padding-top: 40px;
     padding-bottom: 45px;
     text-align: center;
 }
@@ -94,7 +98,7 @@
         align-items: center;
         text-align: center;
         margin: 0;
-        padding-top: 40px;
+
     }
 
     & P {
@@ -108,7 +112,7 @@
         margin: 0;
         margin-left: auto;
         margin-right: auto;
-        padding-top: 10px;
+        padding-top: 15px;
     }
 }
 

@@ -3,9 +3,18 @@
     background-color: #F2F2F2;
     padding-top: 127px;
     padding-bottom: 100px;
-    background-image: url(../img/white-background.png);
-    background-repeat: no-repeat;
-    background-size: 100% 25px;
+}
+
+.price::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8vw 100vw 0 0;
+  border-color: #fff transparent transparent transparent;
 }
 
 .price__wrraper {
@@ -34,7 +43,6 @@
     position: relative;
     vertical-align: middle;
     width: 24px;
-    height: 24px;
     cursor: pointer;
 }
 
@@ -53,10 +61,12 @@
     #price-toggle-1:checked ~ .price__toggles label[for="price-toggle-1"]::before,
     #price-toggle-2:checked ~ .price__toggles label[for="price-toggle-2"]::before,
     #price-toggle-3:checked ~ .price__toggles label[for="price-toggle-3"]::before {
-        background-color: #FFFFFF;
-        top: -3px;
-        left: 8px;
-        border: 3px solid #1d2631;
+      background-color: #fff;
+      top: -2px;
+      left: 9px;
+      border: 3px solid #1d2631;
+      width: 11px;
+      height: 11px;
     }
 
     #price-toggle-1:checked ~ .price__slider .price__table {
@@ -85,13 +95,15 @@
     text-transform: uppercase;
     text-align: center;
     align-items: center;
-    margin-top: 15px;
+    margin-top: 12px;
 }
 
 .price-table__header {
     background-color: #283645;
     width: 276px;
     height: 94px;
+    border: 2px solid #E5E5E5;
+    border-radius: 1px 0px 0px 0px;
 }
 
 .price-table__header-wrraper {
@@ -118,7 +130,7 @@
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
-    line-height: 30px;
+    line-height: 25px;
 }
 
 .price-table__privilege-name {
@@ -128,44 +140,86 @@
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 30px;
     align-items: center;
-    width: 276px;
-    height: 59px;
     padding-left: 20px;
+    border: 2px solid #E5E5E5;
+    border-radius: 1px 0px 0px 0px;
+}
+
+.pink-filter {
+  display: flex;
+
+  & svg {
+    margin-left: 77px;
+    margin-top: 19px;
+    margin-bottom: 19px;
+  }
+
+  & p {
+    margin-top: 24px;
+  }
+}
+
+.smile-filter--yes {
+  display: flex;
+
+  & svg {
+    margin-left: 127px;
+    margin-top: 16px;
+    margin-bottom: 19px;
+  }
+
+  & p {
+    margin-top: 19px;
+  }
+
+}
+
+.smile-filter--no {
+  display: flex;
+  width: 256px;
+  height: 59px;
+  & svg {
+    margin-left: 128px;
+    margin-top: 16px;
+  }
+
+  & p {
+    margin-top: 25px;
+  }
+
+}
+
+.comments-filter--no {
+  display: flex;
+  & p {
+    margin-top: 24px;
+    margin-bottom: 25px
+  }
+
+  & svg {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 100px;
+  }
+}
+
+.comments-filter--yes {
+  display: flex;
+  & p {
+    margin-top: 24px;
+    margin-right: 98px;
+  }
+
+  & svg {
+    margin-top: 19px;
+  }
 }
 
 .price-table__privilege-name:first-child {
     display: none;
 }
 
-
-.Yes::after {
-    content: url(../img/yes.svg);
-    margin-left: 77px;
-}
-
-.No--sm::after {
-    content: url(../img/no.svg);
-    margin-left: 129px;
-}
-
-.Yes--sm::after {
-    content: url(../img/yes.svg);
-    margin-left: 129px;
-}
-
-.No--com::after {
-    content: url(../img/no.svg);
-    margin-left: 100px;
-    width: 27px;
-    height: 27px;
-}
-
-.Yes--com::after {
-    content: url(../img/yes.svg);
-    margin-left: 100px;
-}   
 
 @media (min-width: @tablet-width) {
 
