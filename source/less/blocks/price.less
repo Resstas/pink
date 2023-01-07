@@ -220,38 +220,248 @@
     display: none;
 }
 
+.price__wrapper {
+  width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 @media (min-width: @tablet-width) {
+  .ptice {
+    padding-bottom: 66px;
+  }
 
-    .price-table__header:first-child {
-        background: none;
-        display: block;
+  .price__table {
+    margin-left: 20px;
+  }
+
+  #price-toggle-1:checked ~ .price__slider .price__table {
+    transform: translate(0);
+  }
+
+  #price-toggle-2:checked ~ .price__slider .price__table {
+    transform: translate(0);
+  }
+
+  #price-toggle-3:checked ~ .price__slider .price__table {
+    transform: translate(0);
+  }
+
+  .price__toggles {
+    display: none;
+  }
+
+  .pink-tablet {
+    border-bottom: none;
+  }
+
+  .smile-tablet {
+    border-bottom: none;
+  }
+
+  .comment-tablet {
+    border-bottom: 2px solid #E5E5E5;
+  }
+
+  .price-table__header:first-child {
+    display: block;
+    background: none;
+    border: none;
+    width: 0;
+    height: 0;
+  }
+
+  .price-table__privilege-name:first-child {
+    display: block;
+    border-right: none;
+  }
+
+  .pink-filter p {
+    display: none;
+  }
+
+  .smile-filter--no p {
+    display: none;
+  }
+
+  .smile-filter--yes p {
+    display: none;
+  }
+
+  .comments-filter--no p {
+    display: none;
+  }
+
+  .comments-filter--yes p {
+    display: none;
+  }
+
+  .smile-filter--tablet p {
+    margin-top: 18px;
+    margin-left: 15px;
+  }
+
+
+  .comments-filter--tablet p {
+    margin-top: 18px;
+    margin-left: 15px;
+  }
+
+  .pink-filter--tablet p {
+    display: block;
+    margin-top: 18px;
+    margin-left: 15px;
+  }
+
+  .price-table__header {
+    width: 152px;
+    height: 75px;
+  }
+
+  .price-table__header-wrraper {
+    width: 152px;
+    height: 79px;
+  }
+
+  .price-table__privilege-name {
+    padding-left: 0;
+    width: 152px;
+    height: 45px;
+    text-transform: none;
+
+  }
+
+  .pink-filter {
+    width: 152px;
+
+    & svg {
+      margin: 0;
+      margin-left: 60px;
+    }
+  }
+
+  .smile-filter--no {
+    width: 152px;
+    height: 0px;
+
+    & svg {
+      margin: 0;
+      margin-left: 62px;
     }
 
-    .price-table__privilege-name:first-child {
-        display: block;
+  }
+
+  .smile-filter--yes {
+    width: 152px;
+
+
+    & svg {
+      margin: 0;
+      margin-left: 60px;
     }
 
-    .price {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+  }
+
+  .comments-filter--no {
+    width: 152px;
+
+
+    & svg {
+      margin: 0;
+      margin-left: 62px;
     }
 
-    .price-table__header-wrraper {
-        display: flex;
-        flex-direction: column;
+  }
+
+  .comments-filter--yes {
+    width: 152px;
+
+    & svg {
+      margin: 0;
+      margin-left: 60px;
     }
 
-    .price-table__toggles {
-        padding-bottom: 49px;
-        margin: 0;
-        display: none;
-    }
+  }
 
-    .price-table__privilege-type {
-        padding-top: 23px;
-    }
+
+
+  .promo::before {
+    content: url(../img/promo-tablet.svg);
+  }
+
+
+}
+
+@media (min-width: @desktop-width) {
+  .price__wrapper {
+    width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .price-table__header {
+    width: 233px;
+    height: 94px;
+  }
+
+  .price-table__header-wrraper {
+    width: 233px;
+    height: 92px;
+  }
+
+  .price-table__privilege-type {
+    font-size: 18px;
+  }
+
+  .price-table__privilege-price {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .price-table__privilege-name {
+    width: 234px;
+    height: 59px;
+  }
+
+  .pink-filter--tablet p {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 24px;
+    margin-left: 32px;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .pink-filter svg {
+    margin-left: 100px;
+    margin-top: 20px;
+  }
+
+  .smile-filter--tablet p {
+    font-size: 18px;
+    margin-left: 30px;
+  }
+
+  .smile-filter--no svg {
+    margin-left: 98px;
+  }
+
+  .smile-filter--yes svg {
+    margin-left: 100px;
+  }
+
+  .comments-filter--tablet p {
+    font-size: 18px;
+    margin-left: 30px;
+  }
+
+  .comments-filter--no svg {
+    margin-left: 97px;
+  }
+
+  .comments-filter--yes svg {
+    margin-left: 102px;
+  }
+
 
 }

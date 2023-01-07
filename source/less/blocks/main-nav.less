@@ -9,7 +9,7 @@
     & a {
         color: white;
         text-decoration: none;
-    }  
+    }
 }
 
 .main-nav__logo-wrapper {
@@ -76,10 +76,10 @@
     font-size: 18px;
     font-weight: 700;
     line-height: 32px;
-    
+
     align-items: center;
     text-transform: uppercase;
-    
+
 }
 
 
@@ -121,6 +121,7 @@
 
     .main-nav__logo--tablet {
         display: block;
+        margin-left: 20px;
     }
 
     .page-header__logo--mobile {
@@ -151,22 +152,92 @@
 }
 
 @media (min-width:@desktop-width) {
+  .main-nav__wrapper {
+    display: block;
+  }
 
-    .main-nav {
-        display: flex;
-        font-family: 'Open Sans', sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 18px;
-        height: 106px;
+  .site-list__main {
+    margin-right: 78px;
+    & a {
+      padding: 0;
+      background-color: transparent;
+      border-bottom: none;
+      border-top: none;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 18px;
+
+      font-family: 'Open Sans', sans-serif;
+      text-transform: none;
+    }
+  }
+
+  .site-list__foto {
+    margin-right: 79px;
+    & a {
+      padding: 0;
+      background-color: transparent;
+      border-bottom: none;
+      border-top: none;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 18px;
+
+      font-family: 'Open Sans', sans-serif;
+      text-transform: none;
+    }
+  }
+
+  .site-list__contest {
+    margin-right: 79px;
+    & a {
+      padding: 0;
+      background-color: transparent;
+      border-bottom: none;
+      border-top: none;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 18px;
+
+      font-family: 'Open Sans', sans-serif;
+      text-transform: none;
+    }
+  }
+
+  .site-list__academy {
+    margin-right: 133px;
+    width: 131px;
+    & a {
+      padding: 0;
+      background-color: transparent;
+      border-bottom: none;
+      border-top: none;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 18px;
+
+      font-family: 'Open Sans', sans-serif;
+      text-transform: none;
+    }
+  }
+
+  .main-nav {
+    display: flex;
+    height: 106px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
     }
 
     .main-nav__logo--desktop {
         display: block;
         margin-left: 130px;
-        margin-top: 27px;
         margin-right: 173px;
+        margin-bottom: 41px;
     }
 
     .page-header__logo--mobile {
@@ -183,6 +254,6 @@
 
     .main-nav__list {
         display: flex;
-        margin-top: 48px;
+        margin-top: 43px;
     }
 }

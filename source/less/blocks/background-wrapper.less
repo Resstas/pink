@@ -18,16 +18,32 @@
 .background-wrapper--map {
   position: relative;
 
-  &::before {
+  &:before {
     content: "";
     display: block;
+    z-index: 3;
     position: absolute;
-    top: 0;
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 50px 160px 0 160px;
-    border-color: #fff transparent transparent transparent;
+    border-width: 34px 50vw 0 50vw;
+    border-color: #fff transparent transparent transparent;;
   }
 
+}
+
+@media (min-width: @tablet-width) {
+  .background-wrapper--map {
+    &::before {
+      border-width: 66px 50vw 0 50vw;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .background-wrapper--map {
+    &::before {
+      border-width: 90px 50vw 0 50vw;
+    }
+  }
 }

@@ -6,7 +6,7 @@
     .effect-24-hours {
         display: flex;
         justify-content: center;
-        margin-bottom: 109px;
+        margin-bottom: 91px;
         & img {
             margin-top: 54px;
             justify-content: flex-start;
@@ -27,7 +27,7 @@
         height: 59px;
         margin: 0;
         margin-top: 102px;
-        
+
     }
 
     .effect-24-hours__excerpt {
@@ -38,7 +38,7 @@
         width: 297px;
         height: 90px;
         margin-top: 24px;
-        margin-bottom: 24px;
+        margin-bottom: 15px;
     }
 
     .effect-24-hours__link {
@@ -49,4 +49,62 @@
         text-decoration-line: underline;
         color: #D22856;
     }
+
+    .wrapper {
+      width: 660px;
+      margin-right: auto;
+      margin-left: auto;
+      justify-content: center;
+      display: flex;
+    }
+}
+
+@media (min-width:@desktop-width) {
+
+  .wrapper {
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: left;
+    display: flex;
+  }
+  .effect-24-hours {
+    background-color: #F2F2F2;
+    justify-content: left;
+    margin-bottom: 68px;
+
+    & img {
+      width: 298px;
+      height: 345px;
+      margin-top: 9px;
+      margin-bottom: 67px;
+      margin-left: 147px;
+      margin-right: 40px;
+    }
+  }
+
+  .effect-24-hours__copyright {
+    padding-left: 32px;
+  }
+
+  .effect-24-hours__title {
+    width: 298px;
+    height: 23px;
+    line-height: 30px;
+    margin-top: 101px;
+  }
+
+  .effect-24-hours__excerpt {
+    width: 534px;
+    height: 84px;
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 32px;
+    margin-bottom: 37px;
+  }
+
+  .effect-24-hours__link {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
