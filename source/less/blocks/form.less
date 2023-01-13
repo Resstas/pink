@@ -1,5 +1,5 @@
 .form__wrapper {
-    
+
     & legend {
         font-weight: 400;
         font-size: 14px;
@@ -7,7 +7,7 @@
         color: #D22856;
     }
 
-    
+
 }
 
 .form__caption {
@@ -23,6 +23,12 @@
     color: #283645;
     margin: 0;
     margin-top: 52px;
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+  & p:nth-child(2) {
+    display: none;
+  }
 }
 
 .form-name__wrapper {
@@ -31,45 +37,55 @@
     flex-direction: column;
     margin-right: auto;
     margin-left: auto;
-}
-
-.label-name {
-    font-family: 'Open Sans', sans-serif;
-    text-transform: uppercase;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 30px;
-    color: #D22856;
-    margin-right: 157px;
-    margin-top: 16px;
-    margin-bottom: 5px;
-}
-
-.label-name:first-child {
-    margin-top: 55px;
-}
-
-.label-name:nth-child(3) {
-    margin-right: 197px;
-}
-
-.input-name {
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 30px;
     width: 276px;
-    height: 59px;
-    border: 2px solid #E5E5E5;
-    border-radius: 1px;
+    margin-top: 55px;
+    & label {
+      font-family: 'Open Sans', sans-serif;
+      text-transform: uppercase;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 30px;
+      color: #D22856;
+      margin-left: 21px;
+    }
+
+    & input {
+      box-sizing: border-box;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 30px;
+      height: 59px;
+      border: 2px solid #E5E5E5;
+      border-radius: 1px;
+    }
+
+    & input::placeholder {
+      color: #283645;
+      padding-left: 20px;
+    }
 }
 
-.input-name::placeholder {
-    color: #283645;
-    padding-left: 20px;
+.input-first-name {
+  width: 276px;
+  margin-top: 17px;
+  margin-bottom: 29px;
 }
+
+.input-second-name {
+  width: 276px;
+  margin-top: 17px;
+  margin-bottom: 29px;
+}
+
+.input-middle-name {
+  width: 276px;
+  margin-top: 17px;
+  margin-bottom: 29px
+}
+
+
 
 .label-opros {
     font-weight: 400;
@@ -183,10 +199,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    & div {
-        display: flex;
-        flex-flow: column-reverse;
-    }
 }
 
 .form-contact__title {
@@ -194,6 +206,8 @@
 }
 
 .form-number {
+  display: flex;
+  flex-direction: column-reverse;
     & label {
         margin-bottom: 10px;
         margin-left: 22px;
@@ -259,8 +273,8 @@
 .app-item__radio+label::before {
     content: '';
     display: inline-block;
-    width: 37px;
-    height: 37px;
+    width: 41px;
+    height: 41px;
     flex-shrink: 0;
     flex-grow: 0;
     border: 2px solid #E5E5E5;
@@ -275,6 +289,7 @@
 .app-item__radio:checked+label::before {
     background-color: #FFFFFF;
     background-image: url(../img/radio-checked.svg);
+    background-size: 15px 15px;
 }
 
 .app-item:first-child {
@@ -290,7 +305,11 @@
 }
 
 .app-item label {
-    margin-right: 94px;
+  margin-right: 94px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  align-items: center;
 }
 
 .form-text {
@@ -376,3 +395,296 @@
         color: #D22856;
     }
 }
+
+
+@media (min-width:@tablet-width) {
+
+  .page-main__form {
+    margin-bottom: 46px;
+  }
+
+  .form__caption {
+    margin-top: 100px;
+    font-size: 18px;
+    width: 490px;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    & p:nth-child(2) {
+      display: block;
+    }
+  }
+
+  .form__wrapper legend {
+    line-height: 30px;
+  }
+
+  .form-name__wrapper {
+    width: 625px;
+    margin-top: 82px;
+    & label {
+      font-family: 'Open Sans', sans-serif;
+      text-transform: uppercase;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 30px;
+      color: #D22856;
+      margin-left: 0;
+    }
+
+    & input {
+      box-sizing: border-box;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 30px;
+      height: 59px;
+      border: 2px solid #E5E5E5;
+      border-radius: 1px;
+    }
+
+    & input::placeholder {
+      color: #283645;
+      padding-left: 20px;
+    }
+
+  }
+  .input-first-name {
+    width: 521px;
+    margin-bottom: 56px;
+  }
+
+  .input-second-name {
+    width: 561px;
+    margin-bottom: 56px;
+  }
+
+  .input-middle-name {
+    width: 521px;
+  }
+
+  .form-opros__wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .form-app {
+    margin-right: auto;
+    margin-left: auto;
+    border: 2px solid #E5E5E5;
+    border-radius: 1px;
+    background-color: #FFF;
+    width: 616px;
+  }
+
+  .form-app__title {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .app-list {
+    justify-items: left;
+    margin-left: 0;
+    margin-right: 0;
+    margin-left: 60px;
+  }
+
+  .app-item__radio + label::before {
+    margin-right: 22px;
+  }
+
+  .form-contact {
+    border: 2px solid #E5E5E5;
+    border-radius: 1px;
+    width: 616px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .form-contact__title {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    padding-left: 31px;
+    padding-right: 31px;
+  }
+
+  .form-number {
+    flex-direction: row;
+    width: 496px;
+    margin-top: 35px;
+  }
+
+  .input-number {
+    width: 441px;
+    height: 64px;
+    border: 2px solid #E5E5E5;
+    border-radius: 2px;
+  }
+
+  .input-number::placeholder {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #283645;
+    display: flex;
+    padding-left: 20px;
+    align-items: center;
+  }
+
+  .svg-phone {
+    position: absolute;
+    right: 88px;
+    width: 59px;
+    height: 64px;
+    background-color: #E5E5E5;
+    border-radius: 1px;
+    border-right: 2px solid #E5E5E5;
+
+  }
+
+  .svg-phone svg {
+    margin: 23px 0px 20px 18px;
+  }
+
+  .label-number {
+    margin-right: 332px;
+    margin-top: 9px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: #D22856;
+    text-transform: uppercase;
+  }
+
+  .form-email {
+    width: 496px;
+    margin-top: 29px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .input-email {
+    width: 441px;
+    height: 64px;
+    border: 2px solid #E5E5E5;
+    border-radius: 2px;
+  }
+
+  .input-email::placeholder {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    font-family: 'Open Sans';
+    color: #000;
+    padding-left: 20px;
+  }
+
+  .svg-email {
+    position: absolute;
+    right: 88px;
+    width: 59px;
+    height: 64px;
+    background-color: #E5E5E5;
+    border-radius: 1px;
+    border-right: 2px solid #E5E5E5;
+
+  }
+
+  .svg-email svg {
+    margin: 23px 0px 20px 18px;
+  }
+
+  .label-email {
+    margin-right: 359px;
+    margin-top: 9px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: #D22856;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+  }
+
+  .form-achievemnt {
+    width: 616px;
+    background-color: #FFF;
+    border: 2px solid #E5E5E5;
+    border-radius: 1px;
+  }
+
+  .achievemnt-title {
+    padding-left: 31px;
+    padding-right: 31px;
+  }
+
+  .achievemnt-list {
+    justify-content: flex-start;
+    margin-right: 0;
+    margin-left: 0;
+    padding-left: 57px;
+  }
+
+  .achievemnt-item:first-child {
+    margin-top: 36px;
+  }
+
+  .achievemnt-item {
+    margin-bottom: 42px;
+  }
+
+  .achievemnt-item__checkbox + label::before {
+    margin-right: 21px;
+    width: 38px;
+    height: 38px;
+    background-size: 23px 17px;
+  }
+
+  .form-text {
+    width: 616px;
+    border: 2px solid #E5E5E5;
+    border-radius: 1px;
+  }
+
+  .form-text__title {
+    padding-left: 38px;
+    padding-right: 38px;
+    margin-bottom: 30px;
+  }
+
+  .form-text textarea {
+    width: 496px;
+    height: 189px;
+    margin-bottom: 53px;
+  }
+
+  .form-text textarea::placeholder {
+    padding-top: 12px;
+    padding-left: 15px;
+  }
+
+  .form-button__wrapper {
+    display: flex;
+    width: 620px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .form__button {
+    width: 300px;
+    height: 62px;
+    padding: 13px 0px 0px 55px;
+    justify-items: flex-start;
+    margin: 0;
+  }
+
+  .form__desc {
+    margin: 1px 0px 0px 134px;
+  }
+
+}
+
+
